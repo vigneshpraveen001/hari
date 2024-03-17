@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matrix Operations</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<center>
+<body> 
+<div class="whole">
+<div id="large-div">
+<div id="large-div2">
+<div id="project"><h1 style="background-color: transparent;color:black">Project VH-214</h1></div>
+<h2 id="h2"><u>Matrix Operations (up to 5x5)</u></h2>
+
+<div id="matrixInput">
+    <div class="align">
+        <h3 id="matA">Matrix A</h3>
+        <table>
+            <tr>
+                <td><b>Rows:</b></td>
+                <td></td>
+                <td><div><input type="number" id="matrixARows" min="1" max="5" value="2"></div></td>
+            </tr>
+            <tr>
+                <td><b>Columns:</b></td>
+                <td></td>
+                <td><div><input type="number" id="matrixACols" min="1" max="5" value="2"></div></td>
+            </tr>
+        </table>   
+    </div>
+
+    <div class="align">
+        <h3 id="matB">Matrix B</h3>
+        <table>
+            <tr>
+                <td><b>Rows:</b></td>
+                <td></td>
+                <td><div><input type="number" id="matrixBRows" min="1" max="5" value="2"></div></td>
+            </tr>
+            <tr>
+                <td><b>Columns:</b></td>
+                <td></td>
+                <td><div><input type="number" id="matrixBCols" min="1" max="5" value="2"></div></td>
+            </tr>
+        </table>  
+    </div>
+
+    <div><button class="button" onclick="generateMatrices()">Generate Matrices</button></div>
+</div>
+
+<div id="matrixA"></div>
+<div id="matrixB"></div>
+<div id="matrixResult"></div>
+
+<div id="operations">
+    <button class="addition" onclick="performOperation('addition')">Addition</button><br>
+    <button class="subtraction" onclick="performOperation('subtraction')">Subtraction</button><br>
+    <button class="multiplication" onclick="performOperation('multiplication')">Multiplication</button>
+</div>
+</div>
+</div>
+</div>
+</body>
+</center>
+</html>
+
